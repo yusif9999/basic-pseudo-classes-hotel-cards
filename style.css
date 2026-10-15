@@ -1,0 +1,157 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    background-color: #eee;
+}
+
+h1{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 36px;
+}
+
+.container{
+    margin: 36px;
+    padding: 36px;
+    .cards{
+        clear: both;
+        .card{
+            width: 30%;
+            margin-right: 40px;
+            background-color: #fff;
+            border: 2px solid #ddd;
+            padding: 30px;
+            float: left;
+            position: relative;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            border-radius: 5px;
+            &:nth-child(2){
+                border: 3px solid gold;
+                a{
+                    background-color: goldenrod;
+                }
+                a + span{
+                    display: inline-block;
+                    padding: 12px 20px;
+                    background-color: goldenrod;
+                    color: #fff; 
+                    position: absolute;
+                    top: -20px;
+                    right: -15px;
+                    border: 2px solid #fff;
+                    font-weight: bold;
+                }
+            }
+            &:last-child{
+                ul{
+                    li{
+                        span{
+                            top: 180px;
+                        }
+                    }
+                }
+            }
+            h2{
+                margin-bottom: 20px;
+            }
+            div{
+                margin-bottom: 20px;
+                span{
+                    &:first-child{
+                        font-size: 24px;
+                        font-weight: bold;
+                    }
+                    &:last-child{
+                        font-size: 16px;
+                        opacity: 0.8;
+                        font-weight: bold;
+                    }
+                }
+            }
+            table{
+                width: 100%;
+                border-collapse: collapse;
+                margin-bottom: 20px;
+                tr{
+                    td{
+                        border: 1px solid #ddd;
+                        padding: 10px;
+                        font-size: 14px;
+                        &:first-child{
+                            background-color: #f9f9f9;
+                            font-weight: bold;        
+                        }
+                    }
+                }
+            }
+            ul{
+                margin-bottom: 20px;
+                li{
+                    padding: 10px 0;
+                    border-bottom: 1px solid #ddd;
+                    span{
+                        display: none;
+                        width: 200px;
+                        padding: 10px;
+                        background-color: #333;
+                        color: #fff;
+                        font-size: 13px;
+                        text-align: center;
+                        letter-spacing: 1px;
+                        line-height: 1.5;
+                        position: absolute;
+                        top: 70px;
+                        left: 30px;
+                    }
+                    &:hover{
+                        span{
+                            display: inline-block;
+                        }
+                    }
+                    i{
+                        color: teal;
+                        margin-right: 5px;
+                    }
+                }
+            }
+            p{
+                margin-bottom: 25px;
+                overflow: auto;
+                max-height: 70px;
+                font-size: 14px;
+                line-height: 1.6;
+                letter-spacing: 1px;
+                opacity: 0.8;
+            }
+            a{
+                display: inline-block;
+                padding: 15px;
+                width: 100%;
+                background-color: rgba(103, 63, 2, 0.7);
+                text-align: center;
+                color: #fff;
+                border-radius: 4px;
+                &:hover{
+                    background-color: rgba(103, 63, 2, 1);
+                }
+                &:active{
+                    background-color: rgba(103, 63, 2, 0.85);
+                }
+                &:focus{
+                    outline: 3px dashed #333;
+                    outline-offset: 3px;
+                }
+            }
+            
+        }
+    }
+}
